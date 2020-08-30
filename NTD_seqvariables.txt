@@ -1,0 +1,4 @@
+Sequence (Residues 10-33)
+EEVETFAFQAEIAQLMSLIINTFY
+Variables
+A,I,L,M,F,W,Y,V,S,T,N,Q,C,G,P,D,E,R,H,K

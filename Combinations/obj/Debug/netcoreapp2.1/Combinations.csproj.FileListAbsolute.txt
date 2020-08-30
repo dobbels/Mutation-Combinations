@@ -1,0 +1,12 @@
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\bin\Debug\netcoreapp2.1\Combinations.deps.json
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\bin\Debug\netcoreapp2.1\Combinations.runtimeconfig.json
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\bin\Debug\netcoreapp2.1\Combinations.runtimeconfig.dev.json
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\bin\Debug\netcoreapp2.1\Combinations.dll
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.csprojAssemblyReference.cache
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.csproj.CoreCompileInputs.cache
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.AssemblyInfoInputs.cache
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.AssemblyInfo.cs
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\bin\Debug\netcoreapp2.1\Combinations.pdb
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.dll
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.pdb
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\Combinations.genruntimeconfig.cache
