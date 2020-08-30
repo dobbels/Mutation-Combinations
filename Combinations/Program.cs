@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Combinations
 {
@@ -7,42 +8,32 @@ namespace Combinations
         static void Main(string[] args)
         {
             var (variables, i28Variable) = ExcelReader.GetVariableConditions("Variables.xlsx");
-            
+
             foreach (var variable in variables)
             {
                 Console.WriteLine(variable);
             }
-            
+
             Console.WriteLine(i28Variable);
 
-            Console.WriteLine("How many variables do you want to include");
-            var nbOfVariables = Console.ReadLine();
-            while (!string.IsNullOrEmpty(nbOfVariables) && !nbOfVariables.Equals("q"))
+            // generate variable combinations for number of mutations and bundle them all
+            var variableCombinations = Generator.GenerateAllVariableCombinations(variables);
+            variableCombinations.ForEach(vc => Console.WriteLine(vc.Aggregate((current, next) => current + "," + next)));
+            
+            for (int nbOfMutations = 1; nbOfMutations <= 8; nbOfMutations++)
             {
-                var variableIndex = 1;
-                try
-                {
-                    var inputNumber = Convert.ToInt32(nbOfVariables);
-                    var mutations = (variables, i28Variable).GenerateMutations(inputNumber, variableIndex);
+                
+                // generate all possible combinations by 'filling in' the conditions in the variables
 
-                    foreach (var mutationList in mutations)
-                    {
-                        mutationList.ForEach(Console.WriteLine); // muy elegante
-                        Console.WriteLine();
-                    }
-                }
-                catch (FormatException e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
-                catch (OverflowException e)
-                {
-                    Console.WriteLine(e);
-                    throw;
-                }
+                // always add possibilities for I28 after
 
-                nbOfVariables = Console.ReadLine();
+                var mutationSequences = (variables, i28Variable).GenerateMutations(nbOfMutations);
+
+                foreach (var mutationList in mutationSequences)
+                {
+                    mutationList.ForEach(Console.WriteLine); // muy elegante
+                    Console.WriteLine();
+                }
             }
         }
     }
