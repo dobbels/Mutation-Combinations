@@ -5048,9 +5048,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\Combinations.csproj",
-      "projectName": "Combinations",
-      "projectPath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\Combinations.csproj",
+      "projectUniqueName": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj",
+      "projectName": "CombinationsGenerator",
+      "projectPath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj",
       "packagesPath": "C:\\Users\\sdobbelaere\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\obj\\",
       "projectStyle": "PackageReference",

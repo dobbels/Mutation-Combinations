@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1231
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Combinations", "Combinations\Combinations.csproj", "{EFC005EE-32C1-490A-87F3-0F08EC60DEC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CombinationsGenerator", "Combinations\CombinationsGenerator.csproj", "{EFC005EE-32C1-490A-87F3-0F08EC60DEC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

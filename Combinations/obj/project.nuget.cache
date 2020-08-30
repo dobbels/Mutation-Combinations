@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LedamZB5jtLDIcCUG5zoeS+Q71Qszv8tG2Uz8QCxNZlo/iYKon5GswfECztBwmvvx0IugdkE9C3ZHJdBwrxyPQ==",
+  "dgSpecHash": "z0WTthIspu66BzEurSCIlJOIVX23ZtioB3+onwZWkczRMOs/MqU6s339EPLK1dk/hYljW0TzpOLf/E4/FKDCag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\Combinations.csproj",
+  "projectFilePath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sdobbelaere\\.nuget\\packages\\epplus\\5.3.0\\epplus.5.3.0.nupkg.sha512",
     "C:\\Users\\sdobbelaere\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
