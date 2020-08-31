@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Combinations
+namespace CombinationsGenerator.Models
 {
     public class Mutation
     {

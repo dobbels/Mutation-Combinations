@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Reflection.Metadata.Ecma335;
+﻿using System.Collections.Generic;
 using System.Text;
 
-namespace Combinations
+namespace CombinationsGenerator.Models
 {
     public class Variable
     {
@@ -29,7 +27,7 @@ namespace Combinations
             }
 
             stringBuilder.Append("\n");
-            
+
             return stringBuilder.ToString();
         }
     }

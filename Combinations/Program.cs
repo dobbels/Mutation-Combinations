@@ -1,6 +1,7 @@
-﻿using System;
+﻿using CombinationsGenerator.Generators;
+using CombinationsGenerator.IO;
+using System;
 using System.IO;
-using System.Linq;
 
 namespace Combinations
 {
@@ -29,7 +30,7 @@ namespace Combinations
             var mutations = MutationGenerator.GenerateMutationsOf(variableCombinations, variables);
 
 #if DEBUG
-            for (int i = 1; i <= variables.Count; i++)
+            for (var i = 1; i <= variables.Count; i++)
             {
                 mutations.Where(m => m.Sequence.Count == i).ToList().ForEach(Console.WriteLine);
                 Console.ReadKey();
@@ -47,7 +48,6 @@ namespace Combinations
             }
 
             Console.WriteLine($"All mutations have been written to the file with location {filePath}.");
-
             Console.WriteLine();
             Console.WriteLine("Press any key to close this window");
             Console.ReadKey();

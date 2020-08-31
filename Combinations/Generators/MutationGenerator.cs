@@ -1,9 +1,9 @@
-﻿using System;
+﻿using CombinationsGenerator.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace Combinations
+namespace CombinationsGenerator.Generators
 {
     public static class MutationGenerator
     {
@@ -48,7 +48,7 @@ namespace Combinations
 
         private static void GenerateMutationsRecursively(
             List<List<string>> listsOfVariableConditions,
-            List<string> cumulatedConditions, 
+            List<string> cumulatedConditions,
             List<Mutation> mutationsForThisCombination)
         {
             if (listsOfVariableConditions.Count == 0)
@@ -57,7 +57,7 @@ namespace Combinations
                 return;
             }
 
-            for (int i = 0; i < listsOfVariableConditions[0].Count; i++)
+            for (var i = 0; i < listsOfVariableConditions[0].Count; i++)
             {
                 cumulatedConditions.Add(listsOfVariableConditions[0][i]);
 

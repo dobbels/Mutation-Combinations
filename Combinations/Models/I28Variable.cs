@@ -1,4 +1,4 @@
-﻿namespace Combinations
+﻿namespace CombinationsGenerator.Models
 {
     public class I28Variable : Variable
     {
