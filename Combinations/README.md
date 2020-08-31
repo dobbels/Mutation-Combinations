@@ -1,7 +1,4 @@
-﻿Put file Variables.xlsx in location ...
+﻿Put file Variables.xlsx in the first sheet. Locations in top row, possible mutations in the columns underneath those headers.
+Put I28 variable in second sheet in the same format
 
-Right now this is hardcode to handle 8 locations + the I28 location
-
-...
-
-Ask for an update of this program if any of these constraints are just too much ;)
+Ask for an update of this program when changes would be needed ;)

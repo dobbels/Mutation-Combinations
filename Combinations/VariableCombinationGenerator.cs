@@ -7,31 +7,28 @@ namespace Combinations
     public static class VariableCombinationGenerator
     {
         public static void GenerateAllVariableCombinationsRecursive(
-            string[] variables,
-            string[] cumulatedList,
+            List<string> variables,
+            List<string> cumulatedList,
             List<List<string>> cumulatedLists, 
             int desiredNbOfVariables)
         {
-            if (cumulatedList.Length == desiredNbOfVariables)
+            if (cumulatedList.Count == desiredNbOfVariables)
             {
                 cumulatedLists.Add(cumulatedList.ToList());
                 return;
             }
 
-            for (int i = 0; i < variables.Length; i++)
+            for (int i = 0; i < variables.Count; i++)
             {
-                var newVariables = new ArraySegment<string>(variables, i + 1, variables.Length - i - 1)
-                    .ToArray();
-
-                var newCumulatedList = new string[cumulatedList.Length + 1];
-                Array.Copy(cumulatedList, 0, newCumulatedList, 0, cumulatedList.Length);
-                newCumulatedList[newCumulatedList.Length - 1] = variables[i];
+                cumulatedList.Add(variables[i]);
     
                 GenerateAllVariableCombinationsRecursive(
-                    newVariables,
-                    newCumulatedList,
+                    variables.Skip(i + 1).ToList(),
+                    cumulatedList,
                     cumulatedLists,
                     desiredNbOfVariables);
+
+                cumulatedList.Remove(variables[i]);
             }
         }
 
@@ -43,8 +40,8 @@ namespace Combinations
             {
                 var result = new List<List<string>>();
                 GenerateAllVariableCombinationsRecursive(
-                    variables.Select(v => v.Name).ToArray(), 
-                    new string[0], 
+                    variables.Select(v => v.Name).ToList(), 
+                    new List<string>(), 
                     result, i);
                 result.ForEach(lv => combinations.Add(lv));
 #if DEBUG

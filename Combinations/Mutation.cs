@@ -19,7 +19,7 @@ namespace Combinations
 
     public static class StringArrayExtension
     {
-        public static Mutation ToMutation(this string[] singleAAMutations)
+        public static Mutation ToMutation(this List<string> singleAAMutations)
         {
             var mutation = new Mutation();
             foreach (var mut in singleAAMutations)

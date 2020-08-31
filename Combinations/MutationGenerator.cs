@@ -15,10 +15,10 @@ namespace Combinations
                 var mutationsForThisCombination = new List<Mutation>();
 
                 // TODO op de een of andere manier is het hier normaal mogelijk om ToDictionary te gebruiken
-                var variableDictionary = new Dictionary<string, string[]>();
+                var variableDictionary = new Dictionary<string, List<string>>();
                 foreach (var variable in variables)
                 {
-                    variableDictionary.Add(variable.Name, variable.Conditions.Select(c => c.Name).ToArray());
+                    variableDictionary.Add(variable.Name, variable.Conditions.Select(c => c.Name).ToList());
                 }
 
                 GenerateMutationsOf(variableCombination, variableDictionary, mutationsForThisCombination);
@@ -29,9 +29,9 @@ namespace Combinations
             return mutations;
         }
 
-        private static void GenerateMutationsOf(List<string> variableCombination, Dictionary<string, string[]> variableDictionary, List<Mutation> mutationsForThisCombination)
+        private static void GenerateMutationsOf(List<string> variableCombination, Dictionary<string, List<string>> variableDictionary, List<Mutation> mutationsForThisCombination)
         {
-            var listsOfVariableConditions = new List<string[]>();
+            var listsOfVariableConditions = new List<List<string>>();
             foreach (var variable in variableCombination)
             {
                 var result = variableDictionary.TryGetValue(variable, out var conditions);
@@ -43,12 +43,12 @@ namespace Combinations
             if (listsOfVariableConditions.Count != variableCombination.Count)
                 throw new Exception("listsOfVariableConditions wrongly calculated");
 
-            GenerateMutationsRecursively(listsOfVariableConditions, new string[0], mutationsForThisCombination);
+            GenerateMutationsRecursively(listsOfVariableConditions, new List<string>(), mutationsForThisCombination);
         }
 
         private static void GenerateMutationsRecursively(
-            List<string[]> listsOfVariableConditions, 
-            string[] cumulatedConditions, 
+            List<List<string>> listsOfVariableConditions,
+            List<string> cumulatedConditions, 
             List<Mutation> mutationsForThisCombination)
         {
             if (listsOfVariableConditions.Count == 0)
@@ -57,16 +57,16 @@ namespace Combinations
                 return;
             }
 
-            for (int i = 0; i < listsOfVariableConditions[0].Length; i++)
+            for (int i = 0; i < listsOfVariableConditions[0].Count; i++)
             {
-                var newCumulatedConditions = new string[cumulatedConditions.Length + 1];
-                Array.Copy(cumulatedConditions, 0, newCumulatedConditions, 0, cumulatedConditions.Length);
-                newCumulatedConditions[newCumulatedConditions.Length - 1] = listsOfVariableConditions[0][i];
+                cumulatedConditions.Add(listsOfVariableConditions[0][i]);
 
                 GenerateMutationsRecursively(
                     listsOfVariableConditions.Skip(1).ToList(),
-                    newCumulatedConditions,
+                    cumulatedConditions,
                     mutationsForThisCombination);
+
+                cumulatedConditions.Remove(listsOfVariableConditions[0][i]);
             }
         }
     }
