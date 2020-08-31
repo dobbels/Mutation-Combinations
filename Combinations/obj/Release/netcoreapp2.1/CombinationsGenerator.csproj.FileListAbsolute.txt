@@ -9,3 +9,4 @@ C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Release\netcorea
 C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Release\netcoreapp2.1\CombinationsGenerator.dll
 C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Release\netcoreapp2.1\CombinationsGenerator.pdb
 C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Release\netcoreapp2.1\CombinationsGenerator.genruntimeconfig.cache
+C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Release\netcoreapp2.1\CombinationsGenerator.csprojAssemblyReference.cache
