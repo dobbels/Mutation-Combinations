@@ -9,3 +9,14 @@ C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp
 C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.dll
 C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.pdb
 C:\Users\sdobbelaere\source\repos\Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.genruntimeconfig.cache
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.AssemblyInfoInputs.cache
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.AssemblyInfo.cs
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.csproj.CoreCompileInputs.cache
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.dll
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.pdb
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.deps.json
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.runtimeconfig.json
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.runtimeconfig.dev.json
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.dll
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.pdb
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.genruntimeconfig.cache

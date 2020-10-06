@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj": {}
+    "C:\\Users\\sdobbelaere\\source\\repos\\Mutation-Combinations\\Combinations\\CombinationsGenerator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj": {
+    "C:\\Users\\sdobbelaere\\source\\repos\\Mutation-Combinations\\Combinations\\CombinationsGenerator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj",
+        "projectUniqueName": "C:\\Users\\sdobbelaere\\source\\repos\\Mutation-Combinations\\Combinations\\CombinationsGenerator.csproj",
         "projectName": "CombinationsGenerator",
-        "projectPath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\CombinationsGenerator.csproj",
+        "projectPath": "C:\\Users\\sdobbelaere\\source\\repos\\Mutation-Combinations\\Combinations\\CombinationsGenerator.csproj",
         "packagesPath": "C:\\Users\\sdobbelaere\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sdobbelaere\\source\\repos\\Combinations\\Combinations\\obj\\",
+        "outputPath": "C:\\Users\\sdobbelaere\\source\\repos\\Mutation-Combinations\\Combinations\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,6 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "\\\\wbcme-dev-iis01\\PublishedPackages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -62,7 +63,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
