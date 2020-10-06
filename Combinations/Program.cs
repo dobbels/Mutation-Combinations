@@ -10,6 +10,7 @@ namespace Combinations
     {
         static void Main(string[] args)
         {
+            const string originalProtein = "EEVETFAFQAEIAQLMSLIINTFY";
             var (variables, i28Variable) = ExcelReader.GetVariableConditions("Variables.xlsx");
 
             foreach (var variable in variables)
@@ -38,14 +39,16 @@ namespace Combinations
             }
 #endif
 
+            var mutatedProteins = mutations.Select(m => m.GenerateProtein(originalProtein));
+
             // Output to text file
             var currentDirectory = Directory.GetCurrentDirectory();
             var fileName = $"all-combinations.txt";
             var filePath = Path.Combine(currentDirectory, fileName);
             using var file = new StreamWriter(fileName);
-            foreach (var mutation in mutations)
+            foreach (var mutatedProtein in mutatedProteins)
             {
-                file.WriteLine(mutation);
+                file.WriteLine(mutatedProtein);
             }
 
             Console.WriteLine($"All mutations have been written to the file with location {filePath}.");

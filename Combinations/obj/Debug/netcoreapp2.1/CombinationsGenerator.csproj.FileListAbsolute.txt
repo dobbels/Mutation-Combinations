@@ -20,3 +20,4 @@ C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\n
 C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.dll
 C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\bin\Debug\netcoreapp2.1\CombinationsGenerator.pdb
 C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.genruntimeconfig.cache
+C:\Users\sdobbelaere\source\repos\Mutation-Combinations\Combinations\obj\Debug\netcoreapp2.1\CombinationsGenerator.csprojAssemblyReference.cache
